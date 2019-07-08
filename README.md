@@ -1,4 +1,4 @@
-# Simple Deqryptor for QUA packed qRat [19M07A]
+# Simple Decryptor for QUA packed qRat [19M07A]
 
 Copyright (c) 2019, tan2pow16. All rights reserved.
 
