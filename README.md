@@ -2,7 +2,7 @@
 
 Copyright (c) 2019, tan2pow16. All rights reserved.
 
-**Please beware the `malware` folder contains LIVE MALWARE. Handle the files with extra caution.**
+**Please beware the `malware` folder contains LIVE MALWARE. Be extra cautious while handling the files!**
 
 ## Background
 This is a simple unpacker I made for fun to decrypt a recent qua sample uploaded to HybridAnalysis on Jul., 1st:
