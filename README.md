@@ -37,7 +37,7 @@ Usage: `java -jar ./bin/Deqryptor.jar [mode] <input_path> [mode_args ...] <outpu
 **Please perform the statements below in VIRTUALIZED ENVIRONMENT as some malware components WILL BE LOADED INTO THE MEMORY. I don't guarantee the process is 100% safe!**
 
  * Decompile the sample with CFR decompiler. Since the 1st layer of the packer are usually "innocuous looking" to decieve anti-malware products, the classes are usually simple and easy-to-decompile. I used Bytecode Viewer to do the job for me with ease.
- * Use an IDE to edit the codes. One may find a method-call `ClassLoader.getResourceAsStream(String)`. Extract the `String` parameter as the `Header` class entry path. I used dynamical analysis and just print out the string.
+ * Use an IDE to edit the codes. One may find a method-call `ClassLoader.getResourceAsStream(String)`. Extract the `String` parameter as the `Header` class entry path. I used dynamic analysis and just print out the string.
  * Extract the AES key used to decrypt the resource. This may also simply be done by modifying the decompiled codes above. Just catch an exception and spit out a zero-sized byte array.
  * Use the path and key to decrypt the `Header` class file. You may find `step1.bat` useful.
  * Decompile the decrypt class. You may now find the parameters required for `step2.bat`. If the requirements are met, it will spit out the mapping.ser and the stub containing the decrypted classes.
